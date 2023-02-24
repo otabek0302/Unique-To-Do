@@ -1,0 +1,90 @@
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    background-color: #222222;flex-direction: column;
+}
+
+input {
+  padding: .25rem 0;
+  border: 0;
+  border-bottom: 1px solid #bb1515;
+  outline: 0;
+  background: transparent;
+  color: #fff;
+  font-size: 3rem;
+  line-height: 4rem;
+  letter-spacing: .125rem;
+  transition: all .5s cubic-bezier(.4, .25, .8, .3);
+  margin-bottom: 20px;
+}
+
+input::selection {
+  background: rgba(#bb1515, 0.25);
+}
+
+/* CSS */
+.button {
+  background: #FF4742;
+  border: 1px solid #FF4742;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 16px;
+  min-height: 40px;
+  outline: 0;
+  padding: 12px 40px;
+  text-align: center;
+  text-rendering: geometricprecision;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+}
+
+.button:hover,
+.button:active {
+  background-color: initial;
+  background-position: 0 0;
+  color: #FF4742;
+}
+
+.button:active {
+  opacity: .5;
+}
+
+
+.todo__item{
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 500;
+  position: absolute;
+  cursor: move;
+  min-width: 215px;
+  color: black;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+.remove{
+  position: relative;
+  top: -10px;
+  right: -10px;
+  font-size: 13px;
+  font-weight: 900;
+  border: none;
+  background: none !important;
+  outline: none;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+  cursor: pointer;
+}
+
